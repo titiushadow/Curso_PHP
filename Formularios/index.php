@@ -9,10 +9,6 @@
 <body>
 
 <?php
-
-?>
-
-<?php
     if(isset($_POST['enviar-formulario'])):
         // Aarray de erros
         $erros = array();
