@@ -15,6 +15,9 @@ session_start();
         if(empty($login) or empty($senha)):
             $erros[] = "<li> O campo login/senha precisa ser preenchido </li>";
         else:
+            // 105 OR 1=1
+            // 1; DROP TABLE teste
+
             $sql = "SELECT login FROM usuarios WHERE login = '$login'";
             $resultado = mysqli_query($connect, $sql);
             
